@@ -168,6 +168,10 @@ img {
     }
 }
 
+.navegacion__link--blanco{
+    color: var(--blanco);
+}
+
 /* NUCLEUS */
 .nucleus{
     margin-top: 5rem;
@@ -368,20 +372,25 @@ img {
 
 .footer{
     background-color: #592b92;
-}
-
-.footer__grid{
-    display: flex;
-    flex-direction: column;
+    padding: 4rem;
 }
 
 @media (min-width: 768px) { 
     .footer__grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 }
 
-.navegacion__link{
+.footer__logo{
+    width: 20rem;
+    margin: 0 auto 4rem auto;
+}
 
+@media (min-width: 768px) { 
+    .footer__logo{
+        margin:0;
+    }
 }
